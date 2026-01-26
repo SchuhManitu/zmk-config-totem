@@ -46,21 +46,6 @@
         };
     };
 
-    macros {
-        Protokoll: Protokoll {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LS(E) &kp I &kp N &kp S &kp A &kp T &kp Z &kp M &kp E &kp L &kp D &kp U &kp N &kp G &kp PERIOD &kp ENTER>,
-                <&macro_wait_time 1>,
-                <&kp LS(A) &kp COLON &kp SPACE &kp F &kp R &kp E &kp I>,
-                <&macro_wait_time 1>,
-                <&kp LS(B) &kp COLON &kp SPACE &kp O &kp DOT &kp P &kp DOT &kp LS(B) &kp DOT>;
-
-            label = "PROTOKOLL";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -83,10 +68,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp SEMI
-            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI MINUS
-&Protokoll  &kp X       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH        &kp BSLH
-                                    &kp DEL      &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
+           &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp SEMI
+           &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G        &kp H    &mt RSHFT J  &mt RCTRL K  &mt RALT L  &mt RGUI MINUS
+&kp COLON  &kp X       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH        &kp BSLH
+                                   &kp DEL      &lt NAV TAB  &kp SPACE    &kp RET  &lt SYM ESC  &kp BSPC
             >;
         };
 
