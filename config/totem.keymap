@@ -61,14 +61,7 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
-        };
-
-        wwe: wwe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LS(T) &kp E &kp S &kp T &kp X &kp Y &kp Z &kp EXCL>;
-            label = "WWE";
-        };
+        
     };
 
     keymap {
