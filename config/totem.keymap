@@ -61,7 +61,7 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
-        
+        };
     };
 
     keymap {
