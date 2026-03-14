@@ -64,15 +64,7 @@
         };
     };
 
-    behaviors {
-        verw: verw {
-            compatible = "zmk,behavior-send-string";
-            label = "VERW";
-            #binding-cells = <0>;
-            wait-ms = <2>;
-            tap-ms = <2>;
-            text = "Tunktionstest123";
-        };
+    
     };
 
     keymap {
